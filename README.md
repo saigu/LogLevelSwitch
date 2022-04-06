@@ -75,7 +75,7 @@ public class LogLevelSwitchConfig {
 
 在resource目录下新建LocalSwitch.json文件：
 
-![img.png](image/structure.png)
+![img.png](image/json_pic.png)
 
 然后填写开关配置：
 
