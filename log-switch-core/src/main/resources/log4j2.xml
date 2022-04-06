@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %p [%c] - %m%n"/>
+        </Console>
+        <RollingRandomAccessFile name="File" fileName="logs/log_"
+                                 append="true"
+                                 filePattern="logs/log_%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <Charset>UTF-8</Charset>
+                <Pattern>%d %p [%c] - %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="7"/>
+        </RollingRandomAccessFile>
+    </Appenders>
+
+    <Loggers>
+        <root level="INFO">
+            <appender-ref ref="File"/>
+            <appender-ref ref="Console"/>
+        </root>
+    </Loggers>
+
+</Configuration>

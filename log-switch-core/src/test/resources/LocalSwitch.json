@@ -1,0 +1,9 @@
+{
+  "status": "off",
+  "loggerBeans": [
+    {
+      "name": "all",
+      "level": "error"
+    }
+  ]
+}
