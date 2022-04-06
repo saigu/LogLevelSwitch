@@ -164,7 +164,7 @@ SwitchContext是我们的关键配置：
 
 | 参数名 | 含义 | 可选值  |
 | --- | --- | --- |
-| status | 开关状态  | 「off」: 关闭，使用应用 「on」:开启，使用配置中心的配置等级。  |
+| status | 开关状态  | 「off」: 关闭，使用应用 <br>「on」:开启，使用配置中心的配置等级。  |
 | List<LoggerBean> | 日志等级list | 如果列表的第一个LoggerBean的name为all，则影响全局logger等级 |
 
 参考范例：
