@@ -1,4 +1,6 @@
-# 1.为什么需要LogLevelSwitch
+# LogLevelSwitch: 运行时动态日志等级开关
+
+## 1.为什么需要LogLevelSwitch
 
 随着业务规模不断扩大，每一次线上故障的快速定位都是对开发同学的巨大挑战。
 
@@ -10,13 +12,13 @@
 
 > LogLevleSwitch以中间件的形式嵌入应用，基于配置中心的热更新能力，实现了应用运行时动态调整日志等级的能力。
 
-# 2.功能特性
+## 2.功能特性
 
 - **兼容性**：支持Log4j、Log4j2、Logback等。
 - **扩展性**：可以使用默认的基于本地配置文件的配置修改方式（**仅供本地测试学习使用**）。生产上，**「强烈推荐」** 通过SPI接入你自己的配置中心，实现热更新。
 - **易用性**：接入简单，效果拔群，只要5分钟你就能用上。
 
-# 3.基本架构
+## 3.基本架构
 
 ![基本架构](image/structure.png)
 
@@ -27,11 +29,11 @@ LogLevelSwitch包含两个核心组件，LogContext和SwitchContext。
 - SwitchContext: 保存从配置中心获取的switch开关状态与具体Logger配置信息。通过监听配置中心消息，实时更新switch内容，并实现对Logger等级的修改通知。
 - LogContext：保存应用原始的Logger与日志级别信息，并能够根据switch配置 更新 或 复原 Logger的等级。
 
-# 4.Quick Start
+## 4.Quick Start
 
 话不多说了，快来尝尝鲜吧。
 
-# 4.1 普通spring项目
+### 4.1 普通spring项目
 
 只用三步即可完成。
 
@@ -141,7 +143,7 @@ public class MyConfigListener extends AbstractConfigListener<Map<String, String>
 }
 ```
 
-## 4.2 springboot项目
+### 4.2 springboot项目
 
 两步接入。
 
@@ -158,7 +160,7 @@ public class MyConfigListener extends AbstractConfigListener<Map<String, String>
 
 - STEP 2: 接入配置中心 同「方式一」
 
-# 5.关键配置
+## 5.关键配置
 
 SwitchContext是我们的关键配置：
 
@@ -181,7 +183,7 @@ SwitchContext是我们的关键配置：
 }
 ```
 
-# 6.注意事项
+## 6.注意事项
 
 为了规范日志使用，同时避免影响降级开关效果，初始化的时候会去检测项目中依赖的日志框架实现。
 
