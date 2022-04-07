@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.awan.log.level.sw.starter.LogLevelSwitchAutoConfigure
+io.github.saigu.log.level.sw.starter.LogLevelSwitchAutoConfigure

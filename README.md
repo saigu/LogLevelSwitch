@@ -42,7 +42,7 @@ LogLevelSwitch包含两个核心组件，LogContext和SwitchContext。
 ```xml
 
 <dependency>
-    <groupId>com.awan</groupId>
+    <groupId>io.github.saigu</groupId>
     <artifactId>log-switch-core</artifactId>
     <version>1.0.0</version>
 </dependency>
@@ -63,13 +63,14 @@ public class LogLevelSwitchConfig {
 - STEP 3: 接入配置中心
 
 声明配置中心的SPI实现。
-> 在resource路径下中新建 META-INF/services，创建文件名为com.awan.log.level.sw.listener.ConfigListener的文件，并写入需要的「实现类名」。
+> 在resource路径下中新建 META-INF/services，创建文件名为 io.github.saigu.log.level.sw.listener.
+> ConfigListener的文件，并写入需要的「实现类名」。
 
 **实现一：项目自带的LocalFile配置中心**
 
 如果你还没有自己的配置中心，那就使用我们自带的基于本地配置文件进行本地测试学习。
 
-「实现类名」为com.awan.log.level.sw.listener.LocalFileListener
+「实现类名」为 io.github.saigu.log.level.sw.listener.LocalFileListener
 
 > 注意，生产上 强烈推荐 通过「实现二」接入你自己的配置中心，实现热更新。
 
@@ -152,7 +153,7 @@ public class MyConfigListener extends AbstractConfigListener<Map<String, String>
 ```xml
 
 <dependency>
-    <groupId>com.awan</groupId>
+    <groupId>io.github.saigu</groupId>
     <artifactId>log-switch-starter</artifactId>
     <version>1.0.0</version>
 </dependency>
