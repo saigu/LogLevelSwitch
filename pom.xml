@@ -8,6 +8,31 @@
     <artifactId>LogLevelSwitch</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-ALPHA</version>
+
+    <name>${project.artifactId}</name>
+    <description>a middleware project for log level change during application runtime</description>
+    <url>https://github.com/saigu/LogLevelSwitch</url>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://github.com/saigu/LogLevelSwitch</url>
+        <connection>https://github.com/saigu/LogLevelSwitch.git</connection>
+        <developerConnection>https://github.com/saigu/LogLevelSwitch.git</developerConnection>
+    </scm>
+    <developers>
+        <developer>
+            <name>awan</name>
+            <email>jcq_gzh@163.com</email>
+            <url>weixin: awan_note</url>
+        </developer>
+    </developers>
+
+
     <modules>
         <module>log-switch-core</module>
         <module>log-switch-starter</module>
