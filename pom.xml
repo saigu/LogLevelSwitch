@@ -7,7 +7,7 @@
     <groupId>io.github.saigu</groupId>
     <artifactId>LogLevelSwitch</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0-ALPHA</version>
     <modules>
         <module>log-switch-core</module>
         <module>log-switch-starter</module>
@@ -18,7 +18,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <log.version>1.7.32</log.version>
         <log4j.version>2.17.0</log4j.version>
-        <jackson.version>2.9.8</jackson.version>
+        <jackson.version>2.10.0</jackson.version>
         <logback.version>1.2.7</logback.version>
     </properties>
 
