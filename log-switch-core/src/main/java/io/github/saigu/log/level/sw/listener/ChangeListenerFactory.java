@@ -6,7 +6,6 @@ import java.util.ServiceLoader;
  * Function: 
  *
  * @author awan
- * @date 2022/3/24
  */
 public class ChangeListenerFactory {
     public static ConfigListener getListener() {

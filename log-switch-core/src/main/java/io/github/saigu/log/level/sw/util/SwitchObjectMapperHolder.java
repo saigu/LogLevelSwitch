@@ -7,7 +7,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * Function: 
  *
  * @author awan
- * @date 2022/3/27
  */
 public class SwitchObjectMapperHolder {
     private static final ObjectMapper SWITCH_OBJECT_MAPPER = new ObjectMapper();

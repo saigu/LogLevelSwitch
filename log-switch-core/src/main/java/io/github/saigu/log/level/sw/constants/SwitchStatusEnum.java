@@ -6,7 +6,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * Function: 
  *
  * @author awan
- * @date 2022/3/23
  */
 public enum SwitchStatusEnum {
     // 0 开启， 1关闭

@@ -22,7 +22,6 @@ import java.util.concurrent.ConcurrentHashMap;
  * Function: 
  *
  * @author awan
- * @date 2022/3/22
  */
 public class LogContext {
     private final Logger LOG = LoggerFactory.getLogger(LogContext.class);

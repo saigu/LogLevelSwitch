@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
  * Function: 
  *
  * @author awan
- * @date 2022/3/30
  */
 @Configuration
 @EnableConfigurationProperties(LogLevelSwitchAutoConfigure.class)

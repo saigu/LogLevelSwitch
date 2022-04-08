@@ -11,7 +11,6 @@ import java.util.List;
  * Function:
  *
  * @author awan
- * @date 2022/3/24
  */
 public class SwitchContext {
     private SwitchStatusEnum status;

@@ -9,7 +9,6 @@ import org.slf4j.LoggerFactory;
  * Function: 
  *
  * @author awan
- * @date 2022/3/27
  */
 public abstract class AbstractConfigListener<T> implements ConfigListener<T> {
     private static final Logger LOG = LoggerFactory.getLogger(AbstractConfigListener.class);
@@ -17,8 +16,8 @@ public abstract class AbstractConfigListener<T> implements ConfigListener<T> {
     private LogLevelSwitch logLevelSwitch;
 
     /**
-     * 注册回调对象
-     * @param logLevelSwitch
+     * register callback object
+     * @param logLevelSwitch callback object
      */
     @Override
     public void register(final LogLevelSwitch logLevelSwitch) {
@@ -30,7 +29,7 @@ public abstract class AbstractConfigListener<T> implements ConfigListener<T> {
      * - 接收监听配置
      * - 转化配置
      * - 回调logLevelSwitch
-     * @param changedConfig
+     * @param changedConfig changed config context
      */
     @Override
     public void listenChangedConfig(final T changedConfig) {

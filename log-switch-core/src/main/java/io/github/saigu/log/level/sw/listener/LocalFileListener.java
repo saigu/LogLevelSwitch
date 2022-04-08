@@ -20,7 +20,6 @@ import java.nio.charset.StandardCharsets;
  * Function: 
  * 基于本地文件的实现
  * @author awan
- * @date 2022/3/20
  */
 public class LocalFileListener extends AbstractConfigListener<String> {
 

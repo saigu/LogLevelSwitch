@@ -12,7 +12,6 @@ import org.slf4j.LoggerFactory;
  * Function: 
  *
  * @author awan
- * @date 2022/3/23
  */
 public class LogLevelSwitch {
     private static final Logger LOG = LoggerFactory.getLogger(LogLevelSwitch.class);

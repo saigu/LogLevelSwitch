@@ -8,7 +8,6 @@ import org.slf4j.LoggerFactory;
  * Function: 
  *
  * @author awan
- * @date 2022/3/24
  */
 public class LogLevelSwitchTest {
     private Logger logger = LoggerFactory.getLogger(LogLevelSwitchTest.class);

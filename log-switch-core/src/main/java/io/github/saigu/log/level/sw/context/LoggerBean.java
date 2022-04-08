@@ -4,7 +4,6 @@ package io.github.saigu.log.level.sw.context;
  * Function: 
  *
  * @author awan
- * @date 2022/3/23
  */
 public class LoggerBean {
     private String name;
