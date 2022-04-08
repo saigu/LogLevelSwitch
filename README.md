@@ -44,7 +44,7 @@ LogLevelSwitch包含两个核心组件，LogContext和SwitchContext。
 <dependency>
     <groupId>io.github.saigu</groupId>
     <artifactId>log-switch-core</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-beta</version>
 </dependency>
 ```
 
@@ -155,7 +155,7 @@ public class MyConfigListener extends AbstractConfigListener<Map<String, String>
 <dependency>
     <groupId>io.github.saigu</groupId>
     <artifactId>log-switch-starter</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-beta</version>
 </dependency>
 ```
 

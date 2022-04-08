@@ -7,7 +7,7 @@
     <groupId>io.github.saigu</groupId>
     <artifactId>LogLevelSwitch</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0-ALPHA</version>
+    <version>1.0.0-beta</version>
 
     <name>${project.artifactId}</name>
     <description>a middleware project for log level change during application runtime</description>
